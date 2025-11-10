@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Main{
+class Arrays{
     public static void main(String[]args){
                       // ARRAYS
         Scanner scanner = new Scanner(System.in);
@@ -70,6 +70,18 @@ class Main{
         
         
         //COPY ELEMENTS FROM ONE ARRAY TO ANOTHER
+	int []marks = {12, 34, 56, 78, 90};
+	ArrayList<Integer> marks2 = new ArrayList<Integer>();
+
+	
+
+	for(int i =0; i < marks.length; i++){
+		marks2.add(marks[i]);
+		marks2.add(1);
+	}
+
+	System.out.println(marks2);
+	System.out.println(marks);
         //FIND DUPLICATE ELEMENTS
         //SORT ELEMENTS IN ASCENDING AND DESCENDING ORDER
         //MERGE TWO ARRAYS
