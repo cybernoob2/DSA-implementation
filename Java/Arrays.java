@@ -70,19 +70,30 @@ class Arrays{
         
         
         //COPY ELEMENTS FROM ONE ARRAY TO ANOTHER
-	int []marks = {12, 34, 56, 78, 90};
-	ArrayList<Integer> marks2 = new ArrayList<Integer>();
+	//int []marks = {12, 34, 56, 78, 90};
+	//ArrayList<Integer> marks2 = new ArrayList<Integer>();
 
 	
 
-	for(int i =0; i < marks.length; i++){
-		marks2.add(marks[i]);
-		marks2.add(1);
-	}
+	//for(int i =0; i < marks.length; i++){
+	//	marks2.add(marks[i]);
+	//	marks2.add(1);
+	//}
 
-	System.out.println(marks2);
-	System.out.println(marks);
+	//System.out.println(marks2);
+	//System.out.println(marks);
+
         //FIND DUPLICATE ELEMENTS
+	int []arr = {10,20,30,40,50,30};
+	
+	for(int i =0; i < arr.length; i++){
+	    for(int j= i+1; j < arr.length; j++){
+		if(arr [i] == arr[j]){
+		   System.out.println(arr[i] + " has been duplicated");
+		   break;
+		}
+	    }
+	}
         //SORT ELEMENTS IN ASCENDING AND DESCENDING ORDER
         //MERGE TWO ARRAYS
 
