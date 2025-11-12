@@ -107,7 +107,7 @@ class Arrays{
 	      }
 	   }
 	}
-	System.out.println("Ascending: "+ arr);
+	System.out.println("Ascending: "+ Arrays.toString(arr));
 
         //MERGE TWO ARRAYS
 
