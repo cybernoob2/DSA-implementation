@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Arrays{
+class Learn_array{
     public static void main(String[]args){
                       // ARRAYS
         Scanner scanner = new Scanner(System.in);
@@ -96,20 +96,43 @@ class Arrays{
 	//}
 
         //SORT ELEMENTS IN ASCENDING AND DESCENDING ORDER
-	int []arr = {12,34,56,78,90,87,65,43,32,21};
+	//int []arr = {12,34,56,78,90,87,65,43,32,21};
 
-	for(int i =0; i<arr.length; i++){	   for(int j = i+1; j<arr.length; i++){
-	   for(int j = i+1; j<arr.length; j++){
-	      if(arr[i] > arr[j]){
-		int temp = arr[i];
-		arr[i] = arr[j];
-      		arr[j] = temp;
-	      }
-	   }
-	}
-	System.out.println("Ascending: "+ Arrays.toString(arr));
+	////Ascending
+	//for(int i =0; i<arr.length; i++){
+	//   for(int j = i+1; j<arr.length; j++){
+	//      if(arr[i] > arr[j]){
+	//	int temp = arr[i];
+	//	arr[i] = arr[j];
+      	//	arr[j] = temp;
+	//      }
+	//   }
+	//}
+	//System.out.println("Ascending: "+ Arrays.toString(arr));
+
+	////Descending
+	//for(int i=0; i<arr.length; i++){
+	//   for(int j=i+1; j<arr.length; j++){
+	//      if(arr[i] < arr[j]){
+	//	int temp = arr[i];
+	//	arr[i] = arr[j];
+	//	arr[j] = temp;
+	//      }
+	//   }
+	//}
+	//System.out.println("Descending: "+ Arrays.toString(arr));
 
         //MERGE TWO ARRAYS
-
+	int []arr1 = {1,2,3,4,5};
+	int []arr2 = {6,7,8,9,0};
+	ArrayList<Integer> f_array = new ArrayList<>();
+	
+	for(int i=0; i<arr1.length; i++){
+	   f_array.add(arr1[i]);
+	}
+	for(int i=0; i<arr2.length; i++){
+	   f_array.add(arr2[i]);
+	}
+	System.out.println(f_array);
     }
 }
