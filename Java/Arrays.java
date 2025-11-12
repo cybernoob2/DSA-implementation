@@ -84,17 +84,31 @@ class Arrays{
 	//System.out.println(marks);
 
         //FIND DUPLICATE ELEMENTS
-	int []arr = {10,20,30,40,50,30};
+	//int []arr = {10,20,30,40,50,30};
 	
-	for(int i =0; i < arr.length; i++){
-	    for(int j= i+1; j < arr.length; j++){
-		if(arr [i] == arr[j]){
-		   System.out.println(arr[i] + " has been duplicated");
-		   break;
-		}
-	    }
-	}
+	//for(int i =0; i < arr.length; i++){
+	//    for(int j= i+1; j < arr.length; j++){
+	//	if(arr [i] == arr[j]){
+	//	   System.out.println(arr[i] + " has been duplicated");
+	//	   break;
+	//	}
+	//      }
+	//}
+
         //SORT ELEMENTS IN ASCENDING AND DESCENDING ORDER
+	int []arr = {12,34,56,78,90,87,65,43,32,21};
+
+	for(int i =0; i<arr.length; i++){	   for(int j = i+1; j<arr.length; i++){
+	   for(int j = i+1; j<arr.length; j++){
+	      if(arr[i] > arr[j]){
+		int temp = arr[i];
+		arr[i] = arr[j];
+      		arr[j] = temp;
+	      }
+	   }
+	}
+	System.out.println("Ascending: "+ arr);
+
         //MERGE TWO ARRAYS
 
     }
